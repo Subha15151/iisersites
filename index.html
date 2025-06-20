@@ -2,16 +2,22 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IISERs & IAT Exam Portal</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>IISERs & IAT Exam Portal</h1>
         <p>Your complete guide to IISER admission</p>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search IISER content..." onkeyup="searchContent()">
+        </div>
+
     </header>
 
     <nav>
@@ -21,6 +27,7 @@
         <a href="#exam">IAT Exam</a>
         <a href="#eligibility">Eligibility</a>
         <a href="#admission">Admission</a>
+        <a href="#question-papers">Question-Papers</a>
         <a href="#fact">Fact Zone</a>
     </nav>
 
@@ -247,146 +254,833 @@
         </section>
 
 
-        <section id="eligibility">
-            <h2>IISER Eligibility Criteria 2025</h2>
-
-            <h3>1. Educational Qualification</h3>
-            <p>Candidates must have passed 10+2 (or equivalent) in the Science stream in 2023, 2024, or appearing in 2025. Required subjects include Physics, Chemistry, and Mathematics and/or Biology.</p>
-
-            <h3>2. Minimum Marks Required</h3>
-            <ul>
-                <li><strong>General / OBC-NCL / EWS:</strong> Minimum 60% aggregate marks</li>
-                <li><strong>SC / ST / PwD:</strong> Minimum 55% aggregate marks</li>
-            </ul>
-
-            <h3>3. Admission Channel Requirements</h3>
-            <ul>
-                <li><strong>IAT 2025:</strong> Must qualify the IISER Aptitude Test 2025.</li>
-                <li><strong>JEE Advanced 2025:</strong> Rank within top 15,000 (General category).</li>
-                <li><strong>KVPY:</strong> Discontinued – not applicable from 2022 onward.</li>
-            </ul>
-        </section>
 
 
-        <section id="admission-process">
-            <h2>IISER Admission Process 2025 (Step-by-Step)</h2>
-            <p>The admission process for IISERs in 2025 is simple and fully online. Here's how it works:</p>
 
-            <ol>
-                <li>
-                    <strong>Check Eligibility:</strong> Ensure you have passed Class 12 (Science stream) with required subjects and marks.
-                </li>
+        <section id="syllabus">
+            <h2>IAT EXAM syllabus (2025)</h2>
 
-                <li>
-                    <strong>Choose Your Channel:</strong> You can apply through one or more of the following:
-                    <ul>
-                        <li>IISER Aptitude Test (IAT 2025)</li>
-                        <li>JEE Advanced 2025</li>
-                    </ul>
-                </li>
-
-                <li>
-                    <strong>Register Online:</strong> Visit the official IISER admission portal and fill out the application form.
-                    <br><em>(Expected in April/May 2025)</em>
-                </li>
-
-                <li>
-                    <strong>Pay Application Fee:</strong> Pay the non-refundable application fee online (varies by category).
-                </li>
-
-                <li>
-                    <strong>Download Admit Card (IAT only):</strong> If applying via IAT, download your admit card once it's released.
-                </li>
-
-                <li>
-                    <strong>Appear for IAT 2025 (if applicable):</strong> Attend the computer-based test on the scheduled date in June 2025.
-                </li>
-
-                <li>
-                    <strong>Check Results:</strong> Results and ranks will be published on the IISER website.
-                </li>
-
-                <li>
-                    <strong>Fill Choices:</strong> Choose your preferred IISERs and programs based on your rank.
-                </li>
-
-                <li>
-                    <strong>Seat Allotment:</strong> Seats are allotted through multiple rounds based on your rank and preferences.
-                </li>
-
-                <li>
-                    <strong>Accept Offer & Join:</strong> Accept your allotted seat, pay admission fees, and join your IISER campus!
-                </li>
-            </ol>
-
-            <p><strong>Note:</strong> Candidates must regularly check the official website for announcements and deadlines.</p>
-        </section>
-
-        <section id="fees-details">
-            <h2>Fees Details</h2>
-
-            <h3>🔹 Application Fees</h3>
-            <p>The application fee varies from category to category. Once paid, it is <strong>non-refundable</strong>.</p>
-
-            <table>
-                <thead>
+            <section>
+                <h2>Physics</h2>
+                <table class="syllabus-table">
                     <tr>
-                        <th>Category</th>
-                        <th>Fees (₹)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>General, EWS, and OBC-NCL</td>
-                        <td>2,000</td>
+                        <th>Topics</th>
+                        <th>Topics</th>
                     </tr>
                     <tr>
-                        <td>PWD, Kashmiri Migrants, SC/ST</td>
-                        <td>1,000</td>
+                        <td>Units and Measurements</td>
+                        <td>Oscillations</td>
                     </tr>
                     <tr>
-                        <td>Foreign Nationals</td>
-                        <td>8,500</td>
+                        <td>Motion in a Straight Line</td>
+                        <td>Waves</td>
                     </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <td>Motion in a Plane</td>
+                        <td>Electric Charges and Fields</td>
+                    </tr>
+                    <tr>
+                        <td>Laws of Motion</td>
+                        <td>Electrostatic Potential and Capacitance</td>
+                    </tr>
+                    <tr>
+                        <td>Work, Energy and Power</td>
+                        <td>Current Electricity</td>
+                    </tr>
+                    <tr>
+                        <td>System of Particles and Rotational Motion</td>
+                        <td>Moving Charges and Magnetism</td>
+                    </tr>
+                    <tr>
+                        <td>Gravitation</td>
+                        <td>Magnetism and Matter</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanical Properties of Solids</td>
+                        <td>Electromagnetic Induction</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanical Properties of Fluids</td>
+                        <td>Alternating Current</td>
+                    </tr>
+                    <tr>
+                        <td>Thermal Properties of Matter</td>
+                        <td>Electromagnetic Waves</td>
+                    </tr>
+                    <tr>
+                        <td>Thermodynamics</td>
+                        <td>Ray Optics and Optical Instruments</td>
+                    </tr>
+                    <tr>
+                        <td>Kinetic Theory</td>
+                        <td>Wave Optics</td>
+                    </tr>
+                    <tr>
+                        <td>Semiconductor and Eleectronics</td>
+                        <td>Atoms</td>
+                    </tr>
+                    <tr>
+                        <td>Nuclei</td>
+                        <td>Dual Nature of Radiation and Matter</td>
+                    </tr>
 
-            <h3>🔹 Seat Acceptance Fee</h3>
-            <p>
-                After receiving an offer from IISER, students must pay a seat acceptance fee.<br><br>
-                <strong>SC/ST Candidates:</strong> ₹17,500<br>
-                <strong>Others:</strong> ₹35,000<br><br> This is counted as part of the first semester fee and is <strong>non-refundable</strong>.
-            </p>
-            <h3>🔹 Detailed Fee Structure (PDFs / Flipbooks)</h3>
-            <ul>
-                <li><a href="https://pdflink.to/iiser_mohali_fees/" target="_blank">IISER Mohali Fee Structure (PDF)</a></li>
-                <li><a href="https://pdflink.to/iiser_tirupati_fees/" target="_blank">IISER Tirupati Fee Structure (PDF)</a></li>
-                <li><a href="https://pdflink.to/iiser_tvm_fees/" target="_blank">IISER Thiruvananthapuram Fee Structure (PDF)</a></li>
-                <li><a href="https://pdflink.to/iiser_pune_fees/" target="_blank">IISER Pune Fee Structure (PDF)</a></li>
-                <li><a href="https://publuu.com/flip-book/905261/1981303" target="_blank">IISER Bhopal Fee Structure (Flipbook)</a></li>
-                <li><a href="https://publuu.com/flip-book/905261/1981305" target="_blank">IISER Kolkata Fee Structure (Flipbook)</a></li>
-                <li><a href="https://publuu.com/flip-book/905261/1981306" target="_blank">IISER Berhampur Fee Structure (Flipbook)</a></li>
-            </ul>
+                </table>
+            </section>
+
+            <section>
+                <h2>Chemistry</h2>
+                <table class="syllabus-table">
+                    <tr>
+                        <th>Topics</th>
+                        <th>Topics</th>
+                    </tr>
+                    <tr>
+                        <td>Some Basic Concepts of Chemistry</td>
+                        <td>Equilibrium</td>
+                    </tr>
+                    <tr>
+                        <td>Structure of Atom</td>
+                        <td>Redox Reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Classification of Elements and Periodicity in Properties</td>
+                        <td>Solutions</td>
+                    </tr>
+                    <tr>
+                        <td>Chemical Bonding and Molecular Structure</td>
+                        <td>Coordination Compounds</td>
+                    </tr>
+                    <tr>
+                        <td>Thermodynamics</td>
+                        <td>d- & f-block Elements</td>
+                    </tr>
+                    <tr>
+                        <td>Electrochemistry</td>
+                        <td>Chemical Kinetics</td>
+                    </tr>
+                    <tr>
+                        <td>Organic Chemistry – Some Basic Principles</td>
+                        <td>Hydrocarbons</td>
+                    </tr>
+                    <tr>
+                        <td>Haloalkanes and Haloarenes</td>
+                        <td>Alcohols, Phenols, and Ethers</td>
+                    </tr>
+                    <tr>
+                        <td>Aldehydes, Ketones, and Carboxylic Acids</td>
+                        <td>Organic Compounds Containing Nitrogen</td>
+                    </tr>
+                    <tr>
+                        <td>Biomolecules</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Biology</h2>
+                <table class="syllabus-table">
+                    <tr>
+                        <th>Topics</th>
+                        <th>Topics</th>
+                    </tr>
+                    <tr>
+                        <td>Diversity in the Living World</td>
+                        <td>Reproduction</td>
+                    </tr>
+                    <tr>
+                        <td>Structural Organization in Animals and Plants</td>
+                        <td>Genetics and Evolution</td>
+                    </tr>
+                    <tr>
+                        <td>Cell Structure and Function</td>
+                        <td>Biology and Human Welfare</td>
+                    </tr>
+                    <tr>
+                        <td>Plant Physiology</td>
+                        <td>Biotechnology and Its Application</td>
+                    </tr>
+                    <tr>
+                        <td>Human Physiology</td>
+                        <td>Ecology and Environment</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Mathematics</h2>
+                <table class="syllabus-table">
+                    <tr>
+                        <th>Topics</th>
+                        <th>Topics</th>
+                    </tr>
+                    <tr>
+                        <td>Sets</td>
+                        <td>Matrices & Determinants</td>
+                    </tr>
+                    <tr>
+                        <td>Relations and Functions</td>
+                        <td>Coordinate Geometry - Straight Lines, Conic Sections</td>
+                    </tr>
+                    <tr>
+                        <td>Permutations and Combinations</td>
+                        <td>Three-dimensional Geometry</td>
+                    </tr>
+                    <tr>
+                        <td>Binomial Theorem</td>
+                        <td>Sequences & Series</td>
+                    </tr>
+                    <tr>
+                        <td>Complex Numbers</td>
+                        <td>Limit & Continuity</td>
+                    </tr>
+                    <tr>
+                        <td>Quadratic Equations</td>
+                        <td>Differentiation - Applications</td>
+                    </tr>
+                    <tr>
+                        <td>Linear Inequalities</td>
+                        <td>Integration - Applications</td>
+                    </tr>
+                    <tr>
+                        <td>Trigonometric Functions</td>
+                        <td>Differential Equations</td>
+                    </tr>
+                    <tr>
+                        <td>Vectors</td>
+                        <td>Statistics, Probability & Linear Programming</td>
+                    </tr>
+                </table>
+            </section>
 
 
-        </section>
 
 
 
 
-        <section id="fact">
-            <h2>Did You Know?</h2>
-            <p>Click to reveal a random fact about IISER or IAT!</p>
-            <button onclick="showFact()">Show Random Fact</button>
-            <p id="fact-text"></p>
-        </section>
-    </main>
 
+            <section id="eligibility">
+                <h2>IISER Eligibility Criteria 2025</h2>
+
+                <h3>1. Educational Qualification</h3>
+                <p>Candidates must have passed 10+2 (or equivalent) in the Science stream in 2023, 2024, or appearing in 2025. Required subjects include Physics, Chemistry, and Mathematics and/or Biology.</p>
+
+                <h3>2. Minimum Marks Required</h3>
+                <ul>
+                    <li><strong>General / OBC-NCL / EWS:</strong> Minimum 60% aggregate marks</li>
+                    <li><strong>SC / ST / PwD:</strong> Minimum 55% aggregate marks</li>
+                </ul>
+
+                <h3>3. Admission Channel Requirements</h3>
+                <ul>
+                    <li><strong>IAT 2025:</strong> Must qualify the IISER Aptitude Test 2025.</li>
+                    <li><strong>JEE Advanced 2025:</strong> Rank within top 15,000 (General category).</li>
+                    <li><strong>KVPY:</strong> Discontinued – not applicable from 2022 onward.</li>
+                </ul>
+            </section>
+
+
+            <section id="admission-process">
+                <h2>IISER Admission Process 2025 (Step-by-Step)</h2>
+                <p>The admission process for IISERs in 2025 is simple and fully online. Here's how it works:</p>
+
+                <ol>
+                    <li>
+                        <strong>Check Eligibility:</strong> Ensure you have passed Class 12 (Science stream) with required subjects and marks.
+                    </li>
+
+                    <li>
+                        <strong>Choose Your Channel:</strong> You can apply through one or more of the following:
+                        <ul>
+                            <li>IISER Aptitude Test (IAT 2025)</li>
+                            <li>JEE Advanced 2025</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Register Online:</strong> Visit the official IISER admission portal and fill out the application form.
+                        <br><em>(Expected in April/May 2025)</em>
+                    </li>
+
+                    <li>
+                        <strong>Pay Application Fee:</strong> Pay the non-refundable application fee online (varies by category).
+                    </li>
+
+                    <li>
+                        <strong>Download Admit Card (IAT only):</strong> If applying via IAT, download your admit card once it's released.
+                    </li>
+
+                    <li>
+                        <strong>Appear for IAT 2025 (if applicable):</strong> Attend the computer-based test on the scheduled date in June 2025.
+                    </li>
+
+                    <li>
+                        <strong>Check Results:</strong> Results and ranks will be published on the IISER website.
+                    </li>
+
+                    <li>
+                        <strong>Fill Choices:</strong> Choose your preferred IISERs and programs based on your rank.
+                    </li>
+
+                    <li>
+                        <strong>Seat Allotment:</strong> Seats are allotted through multiple rounds based on your rank and preferences.
+                    </li>
+
+                    <li>
+                        <strong>Accept Offer & Join:</strong> Accept your allotted seat, pay admission fees, and join your IISER campus!
+                    </li>
+                </ol>
+
+                <p><strong>Note:</strong> Candidates must regularly check the official website for announcements and deadlines.</p>
+            </section>
+
+            <section id="fees-details">
+                <h2>Fees Details</h2>
+
+                <h3>🔹 Application Fees</h3>
+                <p>The application fee varies from category to category. Once paid, it is <strong>non-refundable</strong>.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Fees (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>General, EWS, and OBC-NCL</td>
+                            <td>2,000</td>
+                        </tr>
+                        <tr>
+                            <td>PWD, Kashmiri Migrants, SC/ST</td>
+                            <td>1,000</td>
+                        </tr>
+                        <tr>
+                            <td>Foreign Nationals</td>
+                            <td>8,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🔹 Seat Acceptance Fee</h3>
+                <p>
+                    After receiving an offer from IISER, students must pay a seat acceptance fee.<br><br>
+                    <strong>SC/ST Candidates:</strong> ₹17,500<br>
+                    <strong>Others:</strong> ₹35,000<br><br> This is counted as part of the first semester fee and is <strong>non-refundable</strong>.
+                </p>
+                <h3>🔹 Detailed Fee Structure (PDFs)</h3>
+                <ul>
+                    <li><a href="https://pdflink.to/iiser_mohali_fees/" target="_blank">IISER Mohali Fee Structure (PDF)</a></li>
+                    <li><a href="https://pdflink.to/iiser_tirupati_fees/" target="_blank">IISER Tirupati Fee Structure (PDF)</a></li>
+                    <li><a href="https://pdflink.to/iiser_tvm_fees/" target="_blank">IISER Thiruvananthapuram Fee Structure (PDF)</a></li>
+                    <li><a href="https://pdflink.to/iiser_pune_fees/" target="_blank">IISER Pune Fee Structure (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1981303" target="_blank">IISER Bhopal Fee Structure (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1981305" target="_blank">IISER Kolkata Fee Structure (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1981306" target="_blank">IISER Berhampur Fee Structure (PDF)</a></li>
+                </ul>
+
+
+            </section>
+
+            <section id="question-papers">
+                <h2>IAT Previous Year Question Papers</h2>
+                <p>Click below to view or download IAT question papers:</p>
+
+                <ul>
+                    <!-- Publuu Flipbooks -->
+                    <li><a href="https://publuu.com/flip-book/905261/1985501" target="_blank">IAT 2023 (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1985496" target="_blank">IAT 2022 (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1985498" target="_blank">IAT 2021 (PDF)</a></li>
+                    <li><a href="https://publuu.com/flip-book/905261/1985500" target="_blank">IAT 2020 (PDF)</a></li>
+
+                    <!-- PDF Downloads -->
+                    <li><a href="https://united-beige-ykdebao7gr.edgeone.app/2019_Eng_IAT.pdf" target="_blank">IAT 2019 (PDF)</a></li>
+                    <li><a href="https://yabbering-peach-5q4gg3fnsb.edgeone.app/2018_Eng_IAT.pdf" target="_blank">IAT 2018 (PDF)</a></li>
+                    <li><a href="https://harsh-cyan-qyybnly95r.edgeone.app/2017_Eng_IAT.pdf" target="_blank">IAT 2017 (PDF)</a></li>
+                </ul>
+            </section>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IISER Comparison Tool</title>
+                <style>
+                    /* Comparison Tool Styles */
+                    
+                    #iiser-comparison {
+                        background-color: #f5f9ff;
+                        padding: 30px;
+                        border-radius: 10px;
+                        margin: 40px 0;
+                    }
+                    
+                    .comparison-controls {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .iiser-option {
+                        position: relative;
+                        cursor: pointer;
+                        padding: 10px 15px;
+                        background-color: white;
+                        border: 2px solid #004080;
+                        border-radius: 5px;
+                        transition: all 0.3s ease;
+                        user-select: none;
+                    }
+                    
+                    .iiser-option.selected {
+                        background-color: #004080;
+                        color: white;
+                        padding-right: 35px;
+                    }
+                    
+                    .iiser-option.selected::after {
+                        content: "✓";
+                        position: absolute;
+                        right: 10px;
+                        font-weight: bold;
+                    }
+                    
+                    .iiser-option:hover {
+                        background-color: #e6f0ff;
+                    }
+                    
+                    .iiser-option.selected:hover {
+                        background-color: #003366;
+                    }
+                    
+                    .compare-btn {
+                        padding: 10px 20px;
+                        background-color: #004080;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                    
+                    .compare-btn:hover {
+                        background-color: #003366;
+                    }
+                    
+                    .comparison-result {
+                        overflow-x: auto;
+                    }
+                    
+                    #comparison-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    #comparison-table th,
+                    #comparison-table td {
+                        padding: 12px 15px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                    }
+                    
+                    #comparison-table th {
+                        background-color: #004080;
+                        color: white;
+                        position: sticky;
+                        top: 0;
+                    }
+                    
+                    #comparison-table tr:nth-child(even) {
+                        background-color: #f2f6ff;
+                    }
+                    
+                    .highlight-cell {
+                        background-color: #fffacd !important;
+                        font-weight: bold;
+                    }
+                    /* Responsive adjustments */
+                    
+                    @media (max-width: 768px) {
+                        .comparison-controls {
+                            flex-direction: column;
+                        }
+                    }
+                </style>
+            </head>
+
+            <body>
+                <section id="iiser-comparison">
+                    <h2>IISER Comparison Tool</h2>
+                    <div class="comparison-controls">
+                        <div class="iiser-option" data-iiser="pune">IISER Pune</div>
+                        <div class="iiser-option" data-iiser="kolkata">IISER Kolkata</div>
+                        <div class="iiser-option" data-iiser="bhopal">IISER Bhopal</div>
+                        <div class="iiser-option" data-iiser="mohali">IISER Mohali</div>
+                        <div class="iiser-option" data-iiser="tvm">IISER TVM</div>
+                        <div class="iiser-option" data-iiser="tirupati">IISER Tirupati</div>
+                        <div class="iiser-option" data-iiser="berhampur">IISER Berhampur</div>
+                        <button class="compare-btn" onclick="compareIISERs()">Compare Selected IISERs</button>
+                    </div>
+
+                    <div class="comparison-result">
+                        <table id="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <!-- Columns will be added dynamically -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows will be added dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <script>
+                    // IISER data
+                    const iiserData = {
+                        pune: {
+                            name: "IISER Pune",
+                            established: 2006,
+                            location: "Pune, Maharashtra",
+                            specializations: ["All Core Sciences", "Earth & Climate Science", "Data Science"],
+                            seats: 288,
+                            research: "Very Strong",
+                            faculty: 250,
+                            campus: "Urban (150 acres)",
+                            website: "https://www.iiserpune.ac.in"
+                        },
+                        kolkata: {
+                            name: "IISER Kolkata",
+                            established: 2006,
+                            location: "Kolkata, West Bengal",
+                            specializations: ["All Core Sciences", "Computational Biology"],
+                            seats: 310,
+                            research: "Strong",
+                            faculty: 180,
+                            campus: "Suburban (100 acres)",
+                            website: "https://www.iiserkol.ac.in"
+                        },
+                        bhopal: {
+                            name: "IISER Bhopal",
+                            established: 2008,
+                            location: "Bhopal, Madhya Pradesh",
+                            specializations: ["All Core Sciences", "Engineering Sciences", "Economic Sciences"],
+                            seats: 435,
+                            research: "Growing Rapidly",
+                            faculty: 150,
+                            campus: "Semi-urban (200 acres)",
+                            website: "https://www.iiserb.ac.in"
+                        },
+                        mohali: {
+                            name: "IISER Mohali",
+                            established: 2007,
+                            location: "Mohali, Punjab",
+                            specializations: ["All Core Sciences", "Chemical Biology"],
+                            seats: 270,
+                            research: "Strong",
+                            faculty: 120,
+                            campus: "Suburban (125 acres)",
+                            website: "https://www.iisermohali.ac.in"
+                        },
+                        tvm: {
+                            name: "IISER Thiruvananthapuram",
+                            established: 2008,
+                            location: "Thiruvananthapuram, Kerala",
+                            specializations: ["All Core Sciences", "Earth System Sciences"],
+                            seats: 320,
+                            research: "Strong",
+                            faculty: 110,
+                            campus: "Urban (90 acres)",
+                            website: "https://www.iisertvm.ac.in"
+                        },
+                        tirupati: {
+                            name: "IISER Tirupati",
+                            established: 2015,
+                            location: "Tirupati, Andhra Pradesh",
+                            specializations: ["All Core Sciences", "Economic Sciences"],
+                            seats: 350,
+                            research: "Developing",
+                            faculty: 80,
+                            campus: "Semi-urban (180 acres)",
+                            website: "https://www.iisertirupati.ac.in"
+                        },
+                        berhampur: {
+                            name: "IISER Berhampur",
+                            established: 2016,
+                            location: "Berhampur, Odisha",
+                            specializations: ["All Core Sciences"],
+                            seats: 300,
+                            research: "Developing",
+                            faculty: 70,
+                            campus: "Semi-urban (200 acres)",
+                            website: "https://www.iiserbpr.ac.in"
+                        }
+                    };
+
+                    // Track selected IISERs
+                    const selectedIISERs = new Set();
+
+                    // Initialize click handlers for IISER options
+                    document.querySelectorAll('.iiser-option').forEach(option => {
+                        option.addEventListener('click', function() {
+                            const iiser = this.getAttribute('data-iiser');
+
+                            if (selectedIISERs.has(iiser)) {
+                                selectedIISERs.delete(iiser);
+                                this.classList.remove('selected');
+                            } else {
+                                selectedIISERs.add(iiser);
+                                this.classList.add('selected');
+                            }
+                        });
+                    });
+
+                    function compareIISERs() {
+                        if (selectedIISERs.size < 2) {
+                            alert("Please select at least 2 IISERs to compare");
+                            return;
+                        }
+
+                        const table = document.getElementById('comparison-table');
+
+                        // Clear previous data
+                        table.querySelector('thead tr').innerHTML = '<th>Parameter</th>';
+                        table.querySelector('tbody').innerHTML = '';
+
+                        // Add column headers
+                        selectedIISERs.forEach(iiserCode => {
+                            const iiser = iiserData[iiserCode];
+                            const th = document.createElement('th');
+                            th.textContent = iiser.name;
+                            table.querySelector('thead tr').appendChild(th);
+                        });
+
+                        // Add comparison rows
+                        const parameters = [
+                            'established', 'location', 'specializations',
+                            'seats', 'research', 'faculty', 'campus', 'website'
+                        ];
+
+                        parameters.forEach(param => {
+                            const row = document.createElement('tr');
+
+                            // Parameter name cell
+                            const paramCell = document.createElement('td');
+                            paramCell.textContent = param.charAt(0).toUpperCase() + param.slice(1);
+                            row.appendChild(paramCell);
+
+                            // Values for each IISER
+                            selectedIISERs.forEach(iiserCode => {
+                                const iiser = iiserData[iiserCode];
+                                const cell = document.createElement('td');
+                                let value = iiser[param];
+
+                                if (Array.isArray(value)) {
+                                    value = value.join(', ');
+                                }
+
+                                if (param === 'website') {
+                                    cell.innerHTML = `<a href="${value}" target="_blank">Visit Website</a>`;
+                                } else {
+                                    cell.textContent = value;
+                                }
+
+                                row.appendChild(cell);
+                            });
+
+                            table.querySelector('tbody').appendChild(row);
+                        });
+
+                        // Highlight best in each category
+                        highlightBestValues();
+                    }
+
+                    function highlightBestValues() {
+                        const table = document.getElementById('comparison-table');
+                        const rows = table.querySelectorAll('tbody tr');
+
+                        rows.forEach(row => {
+                            const cells = Array.from(row.querySelectorAll('td')).slice(1); // Skip parameter name
+                            const values = cells.map(cell => cell.textContent);
+
+                            // For numeric values (seats, faculty)
+                            if (!isNaN(parseInt(values[0]))) {
+                                const max = Math.max(...values.map(v => parseInt(v) || 0));
+                                cells.forEach(cell => {
+                                    if (parseInt(cell.textContent) === max) {
+                                        cell.classList.add('highlight-cell');
+                                    }
+                                });
+                            }
+                            // For research strength
+                            else if (row.cells[0].textContent === 'Research') {
+                                const researchRankings = {
+                                    "Very Strong": 3,
+                                    "Strong": 2,
+                                    "Growing Rapidly": 1,
+                                    "Developing": 0
+                                };
+
+                                const maxRank = Math.max(...values.map(v => researchRankings[v] || 0));
+                                cells.forEach(cell => {
+                                    if (researchRankings[cell.textContent] === maxRank) {
+                                        cell.classList.add('highlight-cell');
+                                    }
+                                });
+                            }
+                        });
+                    }
+
+                    // Initialize with default selection
+                    window.onload = function() {
+                        // Select first two IISERs by default
+                        const options = document.querySelectorAll('.iiser-option');
+                        options[0].click();
+                        options[1].click();
+                        compareIISERs();
+                    };
+                </script>
+            </body>
+
+            </html>
+
+        
+    <section id="rank-predictor">
+        <div class="calculator-container">
+            <h1>IISER Admission Predictor</h1>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="correct">Correct Answers (0-60)</label>
+                    <input type="number" id="correct" min="0" max="60">
+                </div>
+
+                <div class="input-group">
+                    <label for="wrong">Wrong Answers (0-60)</label>
+                    <input type="number" id="wrong" min="0" max="60">
+                </div>
+
+                <div class="input-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="GEN">General</option>
+                        <option value="OBC">OBC-NCL</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="EWS">EWS</option>
+                        <option value="PWD">PwD</option>
+                    </select>
+                </div>
+
+                <button id="calculate">Calculate</button>
+            </div>
+
+            <div class="results-section">
+                <div class="result-card">
+                    <h3>Your Score</h3>
+                    <div class="score" id="score">--</div>
+                    <small>Out of 240</small>
+                </div>
+
+                <div class="result-card">
+                    <h3>Expected Rank</h3>
+                    <div class="rank" id="rank">--</div>
+                    <small id="rank-range"></small>
+                </div>
+
+                <div class="result-card">
+                    <h3>Expected Round</h3>
+                    <div class="round" id="round">--</div>
+                    <small id="round-details"></small>
+                </div>
+            </div>
+
+            <div class="iiser-predictions" id="predictions">
+                <h3>Institute-wise Predictions</h3>
+                <ul id="institute-list"></ul>
+            </div>
+
+            <div class="disclaimer">
+                <p>Note: Predictions are based on previous year trends. Actual results may vary.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+
+      <div class="faq-item">
+        <h3>What is the IAT exam?</h3>
+        <p>The IISER Aptitude Test (IAT) is an entrance exam conducted for admission into various IISERs across India through the SCB channel.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How is the IAT score calculated?</h3>
+        <p>The score is calculated as: +4 for each correct answer, -1 for each wrong answer, and 0 for unattempted questions. The maximum score is 240.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How accurate is the rank predictor?</h3>
+        <p>Rank predictions are based on previous years' data and trends. While we aim for accuracy, actual ranks may vary depending on performance and competition.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Which IISER should I choose?</h3>
+        <p>All IISERs provide excellent education and research opportunities. You can compare them based on faculty, location, campus, specializations, and your personal preferences.</p>
+      </div>
+    </section>
+
+
+<section id="ask-question">
+  <h2>Have a Question? Ask Below!</h2>
+  <form id="question-form">
+    <label for="user-question">Your Question:</label>
+    <textarea id="user-question" placeholder="Type your question here..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="confirmation-message" style="display:none; color: green; margin-top: 10px;">
+    ✅ Your question has been submitted!
+  </p>
+</section>
+
+
+
+    
+
+
+    <section id="fact">
+        <h2>Did You Know?</h2>
+        <p>Click to reveal a random fact about IISER or IAT!</p>
+        <button onclick="showFact()">Show Random Fact</button>
+        <p id="fact-text"></p>
+    </section>
+</main>
     <footer>
-        <p>&copy; 2025 IISERs Portal | Created by You</p>
+        <p>© 2025 IISER Aptitude Test Resources. Developed by SUBHA</p>
+        <p>Made with ❤️ for IISER aspirants</p>
+
+        <div class="footer-icons">
+            <a href="mailto:ratikantasahoo1555@gmail.com" target="_blank" title="Email">
+                <img src="images/email.png" alt="Email" />
+            </a>
+            <a href="https://github.com/Subha15151/iisersites" target="_blank" title="GitHub">
+                <img src="images/github.png" alt="GitHub" />
+            </a>
+            <a href="https://instagram.com/subha_15151" target="_blank" title="Instagram">
+                <img src="images/instagram.png" alt="Instagram logo in a colorful gradient circle, representing a link to the developer's Instagram profile, located among other social media icons in the website footer" />
+            </a>
+        </div>
+
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
