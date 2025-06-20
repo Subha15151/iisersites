@@ -21,6 +21,11 @@
     </header>
 
     <nav>
+      <div class="nav-header">
+        <button class="menu-toggle" onclick="togglemenu()">☰</button>
+      </div>
+      <div class="nav-links" id="navLinks">
+        
         <a href="#about">About</a>
         <a href="#programmes">Programmes</a>
         <a href="#intake">Intake Capacity</a>
@@ -948,6 +953,14 @@
                         compareIISERs();
                     };
                 </script>
+                <script>
+                  function toggleMenu() {
+                    const nav = document.getElementById("navLinks");
+                    nav.classList.toggle("active");
+                  }
+                </script>
+
+                
             </body>
 
             </html>
