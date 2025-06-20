@@ -96,3 +96,4 @@ document.getElementById("question-form").addEventListener("submit", function (e)
     message.style.display = "none";
   }, 5000);
 });
+
